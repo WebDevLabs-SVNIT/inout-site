@@ -1,0 +1,26 @@
+body {
+
+	font-family : Karla, sans-serif;
+	.section {
+		width : 100vw;
+		height : 100vh;
+		background-color: #d8d8d8;
+	}
+
+	.section__main {
+		
+		@extend .section;
+
+		.content {
+			width : 1140px;
+			background-color: #000;
+			margin : 0 auto;
+			color : white;
+		}
+
+		nav {
+			
+		}
+		
+	}
+}
