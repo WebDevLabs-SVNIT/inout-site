@@ -25,7 +25,7 @@ body {
 		@extend .section;
 
 	 	// For the background image
-		background-image : url('./images/cover_main.png');
+		// background-image : url('./images/cover_main.png');
 		background-repeat : no-repeat;
 		background-position : 0% 100%;
 
@@ -41,6 +41,8 @@ body {
 			margin : 0 auto;
 			text-align : right;
 			font-size : 1.1em;
+			font-family : Quicksand;
+			font-weight : bolder;
 
 			ul {
 				padding : 20px;
@@ -50,6 +52,12 @@ body {
 					padding : 10px;
 					display : inline-block;
 					opacity : 0.5;
+					cursor : pointer;
+					transition : all 0.2s;
+					&:hover {
+						opacity : 1;
+						transition : all 0.2s;
+					}
 				}
 
 				.active {
