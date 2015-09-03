@@ -4,10 +4,10 @@ var lib = require('./lib.js');
 
 $(window).resize(function(){
 
-    $('.className').css({
+    $('.content').css({
         position:'absolute',
-        left: ($(window).width() - $('.section__main .content').outerWidth())/2,
-        top: ($(window).height() - $('.section__main .content').outerHeight())/2
+        left: ($(window).width() - $('.content').outerWidth())/2,
+        top: ($(window).height() - $('.content').outerHeight())/2
     });
 
 });
