@@ -4,7 +4,7 @@ body {
 	.section {
 		width : 100vw;
 		height : 100vh;
-		background-color: #d8d8d8;
+		background-color: $bg_color_main_section;
 	}
 
 	.section__main {
@@ -13,14 +13,24 @@ body {
 
 		.content {
 			width : 1140px;
-			background-color: #000;
 			margin : 0 auto;
 			color : white;
 		}
 
 		nav {
-			
+			ul {
+				padding : 10px;
+				list-style-type : none;
+
+				li {
+					padding : 10px;
+					display : inline-block;
+				}
+			}
 		}
-		
+
+		.main_inout_logo {
+			margin-top : 180px;
+		}
 	}
 }
