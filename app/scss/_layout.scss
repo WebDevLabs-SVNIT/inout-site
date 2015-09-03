@@ -1,6 +1,7 @@
 body {
 
 	font-family : Karla, sans-serif;
+
 	.section {
 		width : 100vw;
 		height : 100vh;
@@ -15,9 +16,18 @@ body {
 		border-radius : 4px;
 	}
 
+	.green_text {
+		color : $color_logo !important;
+	}
+
 	.section__main {
 		
 		@extend .section;
+
+	 	// For the background image
+		background-image : url('./images/cover_main.png');
+		background-repeat : no-repeat;
+		background-position : 0% 100%;
 
 		.content {
 			width : 1140px;
@@ -38,7 +48,7 @@ body {
 		}
 
 		.main_inout_logo {
-			margin-top : 120px;
+			margin-top : 10%;
 		}
 
 		.button__applynow {
@@ -71,6 +81,7 @@ body {
 			letter-spacing: 1px;
 			line-height: 22px;
 			margin-top : 80px;
+			box-shadow : 0px 1px 2px rgba(0, 0, 0, 0.2);
 		}
 	}
 }
