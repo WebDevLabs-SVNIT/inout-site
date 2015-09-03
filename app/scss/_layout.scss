@@ -7,6 +7,14 @@ body {
 		background-color: $bg_color_main_section;
 	}
 
+	.button {
+		width : 250px;
+		height : 75px;
+		text-align : center;
+		cursor : pointer;
+		border-radius : 4px;
+	}
+
 	.section__main {
 		
 		@extend .section;
@@ -30,7 +38,39 @@ body {
 		}
 
 		.main_inout_logo {
-			margin-top : 180px;
+			margin-top : 120px;
+		}
+
+		.button__applynow {
+			@extend .button;
+			
+			line-height : 75px;
+			background: #FFFFFF;
+			box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.33), inset 0px -3px 0px 0px rgba(0,0,0,0.21);
+			font-family: Quicksand-Bold;
+			font-size: 24px;
+			text-shadow : 0px 1px rgba(0, 0, 0, 0.15); 
+			color: #F15738;
+			margin-top : 80px;
+			transition : all 0.3s;
+
+			&:hover {
+				box-shadow: 0px 7px 8px 0px rgba(0,0,0,0.4), inset 0px -3px 0px 0px rgba(0,0,0,0.21);
+				transition : all 0.3s;
+			}
+		}
+
+		.location_and_date {
+			background: $bg_color_secondary_dark;
+			width : 650px;
+			padding : 10px;
+			border-radius: 2px;
+			font-family: Karla-Regular;
+			font-size: 18px;
+			color: #FFFFFF;
+			letter-spacing: 1px;
+			line-height: 22px;
+			margin-top : 80px;
 		}
 	}
 }
