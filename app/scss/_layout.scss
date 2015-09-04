@@ -1,12 +1,10 @@
 body {
 
 	font-family : Karla, sans-serif;
-	width : 100vw;
-	height : 100vh;
 
 	.section {
-		width : 100%;
-		height : 100%;
+		width : 100vw;
+		height : 100vh;
 		background-color: $bg_color_main_section;
 	}
 
@@ -22,6 +20,10 @@ body {
 		color : $color_logo !important;
 	}
 
+	.inner_content {
+		width : 1140px;
+	}
+
 	.section__main {
 		
 		@extend .section;
@@ -32,7 +34,7 @@ body {
 		background-size : cover; 
 
 		.content {
-			width : 1140px;
+			@extend .inner_content;
 			color : white;
 			position: relative;
 	  	top: 50%;
@@ -68,7 +70,6 @@ body {
 						display : inline-block;
 						opacity : 0.5;
 						cursor : pointer;
-						transition : all 0.2s;
 						border-radius : 3px;
 						&:hover {
 							opacity : 1;
@@ -146,4 +147,10 @@ body {
 			box-shadow : 0px 1px 2px rgba(0, 0, 0, 0.2);
 		}
 	}
+
+	.section__about {
+		@extend .section;
+		background-color : darken($bg_color_main_section, 15%);
+	}
+
 }
