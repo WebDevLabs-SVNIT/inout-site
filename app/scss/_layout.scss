@@ -25,6 +25,19 @@ body {
 		margin : 0 auto;
 	}
 
+	.content_text_normal {
+		font-family : 'Open Sans';
+		font-size : 1.2em;
+	}
+
+	.description {
+		margin-top : 40px;
+		h2 {
+			font-family : 'Open Sans';
+			color : $color_logo;
+		}
+	}
+
  .section__main {
 		
 		@extend .section;
@@ -124,11 +137,12 @@ body {
 			text-shadow : 0px 1px rgba(0, 0, 0, 0.15); 
 			color: $bg_color_main_section;
 			margin-top : 6%;
-			transition : all 0.3s;
+			transition : all 0.15s;
 
 			&:hover {
 				box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.4), inset 0px -3px 0px 0px rgba(0,0,0,0.21);
-				transition : all 0.3s;
+				transition : all 0.2s cubic-bezier(.12,.64,.59,1.47);
+				transform : scale(1.07);
 			}
 		}
 
@@ -152,14 +166,56 @@ body {
 
 	.section__about {
 		@extend .section;
-		background-color : darken($bg_color_main_section, 5%);
+		background-color : $bg_color_about_section;
 		border-top : 4px dashed $bg_color_main_section;
 
 		.content__about {
 			@extend .inner_content;		
-			// margin : 0 auto;
 			color  : white;
+			padding : 20px;
+
+			h1.title {
+				font-family : Quicksand;
+				font-weight : bolder;
+				letter-spacing : 2px;
+				margin-top : 20px;
+			}
 		}
+	}
+
+	.section__faq {
+		@extend .section;
+		border-top : 4px dashed $bg_color_about_section;
+
+		background-color : $bg_color_faq_section;
+		padding: 20px;
+
+		h1.title {
+			font-family : Quicksand;
+			font-weight : bolder;
+			letter-spacing : 2px;
+			margin-top : 20px;
+			color  :white;
+		}
+
+	}
+
+	.section__schedule {
+		@extend .section;
+		border-top : 4px dashed $bg_color_faq_section;
+
+		background-color : $bg_color_schedule_section;
+		padding : 20px;
+
+
+		h1.title {
+			font-family : Quicksand;
+			font-weight : bolder;
+			letter-spacing : 2px;
+			margin-top : 20px;
+			color  :white;
+		}
+
 	}
 
 }
