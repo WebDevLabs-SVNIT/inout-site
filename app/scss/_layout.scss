@@ -21,10 +21,11 @@ body {
 	}
 
 	.inner_content {
-		width : 1140px;
+		width : $width_content;
+		margin : 0 auto;
 	}
 
-	.section__main {
+ .section__main {
 		
 		@extend .section;
 
@@ -35,6 +36,7 @@ body {
 
 		.content {
 			@extend .inner_content;
+			margin : 0;
 			color : white;
 			position: relative;
 	  	top: 50%;
@@ -74,13 +76,13 @@ body {
 						&:hover {
 							opacity : 1;
 							transition : all 0.2s;
-							background-color : darken($bg_color_main_section, 25%);
+							background-color : darken($bg_color_main_section, 10%);
 						}
 					}
 
 					.active {
 						opacity : 1;
-						background-color : darken($bg_color_main_section, 25%);
+						background-color : darken($bg_color_main_section, 10%);
 					}
 				}
 			} 
@@ -150,7 +152,14 @@ body {
 
 	.section__about {
 		@extend .section;
-		background-color : darken($bg_color_main_section, 15%);
+		background-color : darken($bg_color_main_section, 5%);
+		border-top : 4px dashed $bg_color_main_section;
+
+		.content__about {
+			@extend .inner_content;		
+			// margin : 0 auto;
+			color  : white;
+		}
 	}
 
 }
