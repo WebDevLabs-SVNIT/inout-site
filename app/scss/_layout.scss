@@ -116,10 +116,11 @@ body {
 				text-align : right;
 			}
 			.social_icon {
-				margin-left : 20px;
+				margin-left : 10px;
 				cursor:pointer;
 				opacity : 0.6;
 				transition : all 0.2s;
+				padding : 5px;
 				&:hover {
 					opacity : 1;
 					transition : all 0.2s;
@@ -182,6 +183,7 @@ body {
 			color  : white;
 			padding : 20px;
 
+
 			h1.title {
 				@extend .section--title;
 			}
@@ -190,6 +192,7 @@ body {
 
 	.section__faq {
 		@extend .section;
+		height : auto;
 		border-top : 4px dashed $bg_color_about_section;
 
 		background-color : $bg_color_faq_section;
@@ -199,6 +202,18 @@ body {
 			@extend .section--title;
 		}
 
+		.description {
+			margin-top : -10px;
+			h2 {
+				color : saturate(lighten($color_logo, 2%), 5%);
+			}
+		}
+
+		.content__faq {
+			@extend .inner_content;
+			padding: 20px;
+			color : white;
+		}
 	}
 
 	.section__schedule {
