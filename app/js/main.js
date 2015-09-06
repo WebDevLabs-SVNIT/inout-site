@@ -68,16 +68,12 @@ $linksContainer.children().each(function() {
 // Utitlity functions
 function highlightRelevantLinkBasedOnPosition(pageScrollPosition) {
 	if( pageScrollPosition >= mainSectionTop && pageScrollPosition < aboutSectionTop ) {
-		// setNavBarColor(mainSectionColor);
 		selectNavLink("main");
 	} else if ( pageScrollPosition >= aboutSectionTop && pageScrollPosition < faqSectionTop ) {
-		// setNavBarColor(aboutSectionColor);
 		selectNavLink("about");
 	} else if ( pageScrollPosition >= faqSectionTop && pageScrollPosition < scheduleSectionTop ) {
-		// setNavBarColor(faqSectionColor);
 		selectNavLink("faq");
 	} else if ( pageScrollPosition >= scheduleSectionTop && pageScrollPosition < sponsorsSectionTop ) {
-		// setNavBarColor(scheduleSectionColor);
 		selectNavLink("schedule");
 	}
 }

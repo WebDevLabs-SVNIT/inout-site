@@ -98,20 +98,14 @@
 	};
 
 	// Attaching event listener to the window for listening to scrolling and adjustin the nav bar
-	// The funcion is debounced
-	var timeout;
 	$window.on('scroll', function (event) {
-		clearTimeout(timeout);
-		timeout = setTimeout(function () {
-			changeNavBarColorBasedOnScrollLocation($window.scrollTop());
-		}, 50);
+		highlightRelevantLinkBasedOnPosition($window.scrollTop());
 	});
 
 	// Attaching event listener to the navigation links
 	$linksContainer.children().each(function () {
 		$(this).on('click', function () {
 			var currentTargetAttr = $(this).attr('data-target');
-			setNavBarColor(sections[currentTargetAttr]["bg_color"]);
 			var scrollTopPos = sections[currentTargetAttr]["top"];
 			$('html, body').animate({
 				scrollTop: scrollTopPos
@@ -120,18 +114,14 @@
 	});
 
 	// Utitlity functions
-	function changeNavBarColorBasedOnScrollLocation(pageScrollPosition) {
+	function highlightRelevantLinkBasedOnPosition(pageScrollPosition) {
 		if (pageScrollPosition >= mainSectionTop && pageScrollPosition < aboutSectionTop) {
-			setNavBarColor(mainSectionColor);
 			selectNavLink("main");
 		} else if (pageScrollPosition >= aboutSectionTop && pageScrollPosition < faqSectionTop) {
-			setNavBarColor(aboutSectionColor);
 			selectNavLink("about");
 		} else if (pageScrollPosition >= faqSectionTop && pageScrollPosition < scheduleSectionTop) {
-			setNavBarColor(faqSectionColor);
 			selectNavLink("faq");
 		} else if (pageScrollPosition >= scheduleSectionTop && pageScrollPosition < sponsorsSectionTop) {
-			setNavBarColor(scheduleSectionColor);
 			selectNavLink("schedule");
 		}
 	}
