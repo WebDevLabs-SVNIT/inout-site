@@ -96,6 +96,7 @@ body {
 
 	.inner_content {
 		width : $width_content;
+		max-width : $max_width_content;
 		margin : 0 auto;
 	}
 
@@ -128,6 +129,8 @@ body {
 		background-image : url('./images/cover_main.png');
 		background-repeat : no-repeat;
 		background-size : cover; 
+		max-height : $max_height_main_section;
+		min-height : $min_height_main_section;
 
 		.content {
 			@extend .inner_content;
@@ -197,12 +200,13 @@ body {
 		@extend .section;
 		background-color : $bg_color_about_section;
 		border-top : 4px dashed $bg_color_main_section;
+		height : auto;
 
 		.content__about {
 			@extend .inner_content;		
 			color  : white;
 			padding : 20px;
-
+			padding-bottom : 111px;
 
 			h1.title {
 				@extend .section--title;
@@ -233,12 +237,14 @@ body {
 			@extend .inner_content;
 			padding: 20px;
 			color : white;
+			padding-bottom : 92px;
 		}
 	}
 
 	.section__schedule {
 		@extend .section;
 		border-top : 4px dashed $bg_color_faq_section;
+		height : auto;
 
 		background-color : $bg_color_schedule_section;
 		padding : 20px;
@@ -263,6 +269,7 @@ body {
 				border-radius : 4px;
 				box-shadow : 0px 2px 3px rgba(0, 0, 0, 0.2);
 				background-color : #ffffff;
+				margin-bottom : 120px;
 
 				ul {
 					list-style : none;
