@@ -2,6 +2,80 @@ body {
 
 	font-family : Karla, sans-serif;
 
+	nav {
+		position : fixed;
+		z-index : 1000;
+		color : white;
+		height : 90px;
+		width : 100%;
+		margin : 0 auto;
+		text-align : left;
+		font-size : 1.2em;
+		font-family : Quicksand;
+		font-weight : bolder;
+		background-color : $bg_color_main_section;
+
+
+		.nav-contents {
+			width : $width_content;
+			height : 100%;
+			margin: 0 auto;
+
+			&:after {
+				display : table;
+				content : '';
+				clear : both;
+			}
+		}
+
+		.section_links {
+			width : 75%;
+			float : left;
+			ul {
+				padding : 20px;
+				list-style-type : none;
+
+				li {
+					padding : 10px;
+					display : inline-block;
+					opacity : 0.35;
+					cursor : pointer;
+					border-radius : 3px;
+					&:hover {
+						opacity : 1;
+						transition : all 0.2s;
+						background-color : darken($bg_color_main_section, 10%);
+					}
+				}
+
+				.active {
+					opacity : 1;
+					background-color : darken($bg_color_main_section, 10%);
+				}
+			}
+		} 
+
+		.social_links {
+			padding : 20px;
+			width : 25%;
+			float : right;
+			line-height : 61px;
+			text-align : right;
+		}
+		.social_icon {
+			margin-left : 10px;
+			cursor:pointer;
+			opacity : 0.35;
+			transition : all 0.2s;
+			padding : 5px;
+			&:hover {
+				opacity : 1;
+				transition : all 0.2s;
+			}
+		}
+
+	}
+
 	.section {
 		width : 100vw;
 		height : 100vh;
@@ -62,71 +136,7 @@ body {
 			position: relative;
 	  	top: 50%;
 	  	left : 50%;
-	  	transform : translate(-50%, -65%);
-		}
-
-		nav {
-			color : white;
-			width : 1140px;
-			height : 80px;
-			margin : 0 auto;
-			text-align : left;
-			font-size : 1.2em;
-			font-family : Quicksand;
-			font-weight : bolder;
-
-			&:after {
-				display : table;
-				content : '';
-				clear : both;
-			}
-
-			.section_links {
-				width : 75%;
-				float : left;
-				ul {
-					padding : 20px;
-					list-style-type : none;
-
-					li {
-						padding : 10px;
-						display : inline-block;
-						opacity : 0.35;
-						cursor : pointer;
-						border-radius : 3px;
-						&:hover {
-							opacity : 1;
-							transition : all 0.2s;
-							background-color : darken($bg_color_main_section, 10%);
-						}
-					}
-
-					.active {
-						opacity : 1;
-						background-color : darken($bg_color_main_section, 10%);
-					}
-				}
-			} 
-
-			.social_links {
-				padding : 20px;
-				width : 25%;
-				float : right;
-				line-height : 61px;
-				text-align : right;
-			}
-			.social_icon {
-				margin-left : 10px;
-				cursor:pointer;
-				opacity : 0.35;
-				transition : all 0.2s;
-				padding : 5px;
-				&:hover {
-					opacity : 1;
-					transition : all 0.2s;
-				}
-			}
-
+	  	transform : translate(-50%, -50%);
 		}
 
 		.main_inout_logo {
