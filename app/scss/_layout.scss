@@ -91,7 +91,7 @@ body {
 					li {
 						padding : 10px;
 						display : inline-block;
-						opacity : 0.5;
+						opacity : 0.35;
 						cursor : pointer;
 						border-radius : 3px;
 						&:hover {
@@ -118,7 +118,7 @@ body {
 			.social_icon {
 				margin-left : 10px;
 				cursor:pointer;
-				opacity : 0.6;
+				opacity : 0.35;
 				transition : all 0.2s;
 				padding : 5px;
 				&:hover {
