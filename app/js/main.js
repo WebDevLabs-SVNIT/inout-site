@@ -73,7 +73,6 @@ $linksContainer.children().each(function() {
 
 // Utitlity functions
 function changeNavBarColorBasedOnScrollLocation(pageScrollPosition) {
-	console.log("done");
 	if( pageScrollPosition >= mainSectionTop && pageScrollPosition < aboutSectionTop ) {
 		setNavBarColor(mainSectionColor);
 		selectNavLink("main");
