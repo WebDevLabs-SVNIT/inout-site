@@ -50,23 +50,30 @@ var sections = {
 };
 
 // Attaching event listener to the window for listening to scrolling and adjustin the nav bar 
+// The funcion is debounced
+var timeout;
 $window.on('scroll', function(event) {
-	changeNavBarColorBasedOnScrollLocation($window.scrollTop());
+	clearTimeout(timeout);
+	timeout = setTimeout(function() {
+		changeNavBarColorBasedOnScrollLocation($window.scrollTop());
+	}, 50);
 });
 
 // Attaching event listener to the navigation links
 $linksContainer.children().each(function() {
 	$(this).on('click', function() {
 		var currentTargetAttr = $(this).attr('data-target');
+		setNavBarColor(sections[currentTargetAttr]["bg_color"]);
 		var scrollTopPos = sections[currentTargetAttr]["top"];
 		$('html, body').animate({
 	    scrollTop: scrollTopPos
-	  }, 500, 'easeInOutQuint');
+	  }, 300, 'easeInOutQuint');
 	});
 });
 
 // Utitlity functions
 function changeNavBarColorBasedOnScrollLocation(pageScrollPosition) {
+	console.log("done");
 	if( pageScrollPosition >= mainSectionTop && pageScrollPosition < aboutSectionTop ) {
 		setNavBarColor(mainSectionColor);
 		selectNavLink("main");
