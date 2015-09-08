@@ -145,11 +145,6 @@ body {
 	  	transform : translate(-50%, -50%);
 		}
 
-		.main_inout_logo {
-			position: relative;
-			z-index :0;
-		}
-
 		#main_logo {
 			width : 494px;
 			height : 495px;
@@ -170,7 +165,7 @@ body {
 			text-shadow : 0px 1px rgba(0, 0, 0, 0.15);
 			color: $bg_color_main_section;
 			margin : 0 auto;
-			margin-top : 6%;
+			margin-top : 50px;
 			transition : all 0.15s;
 
 			&:hover {
@@ -194,7 +189,7 @@ body {
 			letter-spacing: 1px;
 			line-height: 22px;
 			margin : 0 auto;
-			margin-top : -8%;
+			margin-top : -110px;
 			z-index :10;
 			box-shadow : 0px 1px 2px rgba(0, 0, 0, 0.2);
 		}
