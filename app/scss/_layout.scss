@@ -140,15 +140,15 @@ body {
 			margin : 0;
 			color : white;
 			position: relative;
-	  	top: 48%;
+	  	top: 52%;
 	  	left : 50%;
-	  	transform : translate(-50%, -45%);
+	  	transform : translate(-50%, -50%);
 		}
 
 		#main_logo {
-			width : 494px;
-			height : 495px;
-			background-image : url('images/main_inout_logo.png');
+			width : 583px;
+			height : 182px;
+			background-image : url('images/main_inout_logo.svg');
 			background-repeat : no-repeat;
 			margin : 0 auto;
 		}
@@ -165,7 +165,7 @@ body {
 			text-shadow : 0px 1px rgba(0, 0, 0, 0.15);
 			color: $bg_color_main_section;
 			margin : 0 auto;
-			margin-top : 50px;
+			margin-top : 40px;
 			transition : all 0.15s;
 
 			&:hover {
@@ -189,7 +189,7 @@ body {
 			letter-spacing: 1px;
 			line-height: 22px;
 			margin : 0 auto;
-			margin-top : -140px;
+			margin-top : 40px;
 			z-index :10;
 			box-shadow : 0px 1px 2px rgba(0, 0, 0, 0.2);
 		}
