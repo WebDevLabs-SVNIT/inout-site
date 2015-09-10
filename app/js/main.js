@@ -88,6 +88,8 @@ function highlightRelevantLinkBasedOnPosition(pageScrollPosition) {
 		selectNavLink("faq");
 	} else if ( pageScrollPosition >= scheduleSectionTop && pageScrollPosition < sponsorsSectionTop ) {
 		selectNavLink("schedule");
+	} else if ( pageScrollPosition >=  sponsorsSectionTop) {
+		selectNavLink("sponsors");
 	}
 }
 

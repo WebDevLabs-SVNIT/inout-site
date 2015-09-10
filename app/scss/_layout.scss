@@ -269,6 +269,7 @@ body {
 
 			h1.title {
 				@extend .section--title;
+				padding-top : 20px;
 			}
 		}
 	}
@@ -283,6 +284,7 @@ body {
 
 		h1.title {
 			@extend .section--title;
+			padding-top : 20px;
 		}
 
 		.description {
@@ -399,16 +401,16 @@ body {
 		border-top : 4px dashed $bg_color_schedule_section;
 		padding: 20px;
 		background-color : $bg_color_sponsors_section;
-		height : auto;
 
 		h1.title {
 			@extend .section--title;
 			color  : white;
-
+			padding-top : 20px;
 		}
 
 		.description {
 			margin-bottom : 45px;
+			margin-top : 80px;
 		}
 
 
