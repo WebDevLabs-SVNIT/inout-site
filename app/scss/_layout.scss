@@ -159,6 +159,7 @@ body {
 	  	transform : translate(-50%, -50%);
 			@media screen and (max-width : $second_breakpoint) {
 				width : 100%;
+				top : 50%;
 			}
 		}
 
@@ -406,7 +407,6 @@ body {
 				background-color : #ffffff;
 				margin-bottom : 120px;
 				padding-bottom : 61px;
-				min-width : 380px;
 
 				ul {
 					list-style : none;
@@ -441,6 +441,9 @@ body {
 				font-family : 'Source Sans Pro';
 				font-size : 1.3em;
 				line-height : 10px;
+				@media screen and (max-width : 380px) {
+					font-size : 1em;
+				}
 			}
 
 			.schedule_card--time {
