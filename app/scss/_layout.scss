@@ -398,7 +398,7 @@ body {
 		@extend .section;
 		border-top : 4px dashed $bg_color_schedule_section;
 		padding: 20px;
-		background-color : $bg_color_about_section;
+		background-color : $bg_color_sponsors_section;
 		height : auto;
 
 		h1.title {
@@ -451,6 +451,38 @@ body {
 		a {
 			text-decoration : none;
 		}
+
+	}
+
+	footer {
+		width : 100%;	
+		padding : 20px;
+		background-color: $bg_color_footer;
+		color : white;
+		text-align : right;
+		padding-right : 25px;
+		font-size : 1.1em;
+
+		a {
+			color : white;
+			text-decoration :underline;
+			&:hover {
+				color : white;
+			}
+		}
+	}
+
+	.beating-heart {
+		cursor : pointer;
+		color : #e74c3c;
+	}
+
+	.beat-the-heart {
+	  animation: pulse 1.2s infinite ease-out;
+	}
+
+	.content__footer {
+		@extend .inner_content;
 
 	}
 

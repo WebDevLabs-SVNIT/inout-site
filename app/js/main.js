@@ -6,7 +6,8 @@ var $navBar = $('nav'),
 		$aboutSection = $('.section__about'),
 		$faqSection = $('.section__faq'),
 		$scheduleSection = $('.section__schedule'),
-		$sponsorsSection = $('.section__sponsors');
+		$sponsorsSection = $('.section__sponsors'),
+		$beatingHeart = $('.beating-heart');
 
 var navBarOffset = 66;
 
@@ -66,6 +67,16 @@ $linksContainer.children().each(function() {
 	  }, 300, 'easeInOutQuint');
 	});
 });
+
+
+// For the <3
+// $beatingHeart.on('mouseenter', function() {
+// 	$beatingHeart.addClass('beat-the-heart');
+// });
+
+//  $beatingHeart.on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
+//         $beatingHeart.removeClass('beat-the-heart');
+// });
 
 // Utitlity functions
 function highlightRelevantLinkBasedOnPosition(pageScrollPosition) {
