@@ -267,6 +267,10 @@ body {
 			padding : 20px;
 			padding-bottom : 111px;
 
+			p{
+				font-size : 1.5em;
+			}
+
 			h1.title {
 				@extend .section--title;
 			}
@@ -284,6 +288,11 @@ body {
 		h1.title {
 			@extend .section--title;
 		}
+
+		p{
+			font-size : 1.5em;
+		}
+
 
 		.description {
 			margin-top : -10px;
@@ -398,14 +407,59 @@ body {
 		@extend .section;
 		border-top : 4px dashed $bg_color_schedule_section;
 		padding: 20px;
-
-		background-color : white;
+		background-color : $bg_color_about_section;
+		height : auto;
 
 		h1.title {
 			@extend .section--title;
-			color  : #000000;
+			color  : white;
+
 		}
 
+		.description {
+			margin-bottom : 45px;
+		}
+
+
+		.content__sponsors {
+			@extend .inner_content;
+			font-family : 'Open Sans';
+			color : white;
+		}
+
+		p {
+			  font-size : 2em;
+    		padding-bottom : 1pc;
+    		line-height : normal;
+    		color : #FEC537;
+    		text-align : center;
+		}
+
+		.button__contact {
+			@extend .button;
+
+			line-height : 75px;
+			width : 350px;
+			background: $color_button_contact;
+			box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.33), inset 0px -3px 0px 0px rgba(0,0,0,0.21);
+			font-family: Quicksand;
+			font-size: 24px;
+			text-shadow : 0px 1px rgba(0, 0, 0, 0.15);
+			color : white;
+			margin : 0 auto;
+			margin-top : 40px;
+			transition : all 0.15s;
+
+			&:hover {
+				box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.4), inset 0px -3px 0px 0px rgba(0,0,0,0.21);
+				transition : all 0.2s cubic-bezier(.12,.64,.59,1.47);
+				// transform : scale(1.07);
+			}
+		}
+
+		a {
+			text-decoration : none;
+		}
 
 	}
 
