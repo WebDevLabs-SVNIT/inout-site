@@ -56,11 +56,13 @@
 	    $scheduleSection = $('.section__schedule'),
 	    $sponsorsSection = $('.section__sponsors');
 
-	var mainSectionTop = $mainSection.position().top - 86,
-	    aboutSectionTop = $aboutSection.position().top - 86,
-	    faqSectionTop = $faqSection.position().top - 86,
-	    scheduleSectionTop = $scheduleSection.position().top - 86,
-	    sponsorsSectionTop = $sponsorsSection.position().top - 86;
+	var navBarOffset = 66;
+
+	var mainSectionTop = $mainSection.position().top - navBarOffset,
+	    aboutSectionTop = $aboutSection.position().top - navBarOffset,
+	    faqSectionTop = $faqSection.position().top - navBarOffset,
+	    scheduleSectionTop = $scheduleSection.position().top - navBarOffset,
+	    sponsorsSectionTop = $sponsorsSection.position().top - navBarOffset;
 
 	// Colors of different sections of the page
 	var mainSectionColor = '#223241',

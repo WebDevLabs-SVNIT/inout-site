@@ -8,13 +8,13 @@ body {
 		position : fixed;
 		z-index : 1000;
 		color : white;
-		height : 90px;
+		height : 70px;
 		width : 100%;
 		margin : 0 auto;
 		text-align : left;
 		font-size : 1.2em;
-		font-family : Quicksand;
 		font-weight : bolder;
+		font-family : Quicksand;
 		background-color : $bg_color_main_section;
 
 
@@ -32,17 +32,18 @@ body {
 
 		.section_links {
 			width : 75%;
+			line-height : 50px;
 			float : left;
 			ul {
-				padding : 20px;
+				padding : 10px;
 				list-style-type : none;
-
 				li {
-					padding : 10px;
+					margin-top : -50px;
+					padding : 10px 15px 10px 15px;
 					display : inline-block;
 					opacity : 0.35;
 					cursor : pointer;
-					border-radius : 3px;
+					// border-radius : 3px;
 					&:hover {
 						opacity : 1;
 						transition : all 0.2s;
@@ -61,7 +62,7 @@ body {
 			padding : 20px;
 			width : 25%;
 			float : right;
-			line-height : 55px;
+			line-height : 30px;
 			text-align : right;
 		}
 		.social_icon {
@@ -140,10 +141,69 @@ body {
 			margin : 0;
 			color : white;
 			position: relative;
-	  	top: 52%;
+	  	top: 58%;
 	  	left : 50%;
 	  	transform : translate(-50%, -50%);
 		}
+
+  	.bg_circle {
+			position : absolute;			
+			width : 50px;
+			height : 50px;
+	  	top: 24%;
+	  	left : 50%;
+	  	border-radius : 100%;
+	  	transform : translate(-50%, -50%);
+  	}
+
+  	.bg_circle__one{
+  		@extend .bg_circle;
+  		background-color : #40626D;
+			z-index : -100;
+			height : 225px;
+			width : 225px;
+			opacity : 1;
+			// border : 2px solid darken(#40626D, 20%);
+  	}
+
+  	.bg_circle__two{
+  		@extend .bg_circle;
+  		background-color : #294351;
+			z-index : -101;
+  		width : 250px;
+  		height : 250px;
+			opacity : 1;
+			// border : 2px solid darken(#294351, 10%);
+  	}
+
+  	.bg_circle__three{
+  		@extend .bg_circle;
+  		background-color : #324A56;
+			z-index : -102;
+  		width : 320px;
+  		height : 320px;
+			opacity : 1;
+			// border : 2px solid darken(#324A56, 10%);
+  	}
+
+  	.bg_circle__four{
+  		@extend .bg_circle;
+  		background-color : #28424F;
+			z-index : -103;
+  		width : 440px;
+  		height : 440px;
+			opacity : 1;
+			// border : 2px solid darken(#28424F, 10%);
+  	}
+
+  	.bg_circle__five{
+  		@extend .bg_circle;
+  		background-color : #243B49;
+			z-index : -104;
+  		width : 480px;
+  		height : 480px;
+			opacity : 1;
+  	}
 
 		#main_logo {
 			width : 583px;
