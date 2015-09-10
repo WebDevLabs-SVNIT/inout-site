@@ -206,9 +206,9 @@ body {
   	}
 
 		#main_logo {
-			width : 583px;
+			width : 604px;
 			height : 182px;
-			background-image : url('images/main_inout_logo.svg');
+			background-image : url('images/main_inout_logo.png');
 			background-repeat : no-repeat;
 			margin : 0 auto;
 		}
@@ -267,10 +267,6 @@ body {
 			padding : 20px;
 			padding-bottom : 111px;
 
-			p{
-				font-size : 1.5em;
-			}
-
 			h1.title {
 				@extend .section--title;
 			}
@@ -288,11 +284,6 @@ body {
 		h1.title {
 			@extend .section--title;
 		}
-
-		p{
-			font-size : 1.5em;
-		}
-
 
 		.description {
 			margin-top : -10px;
