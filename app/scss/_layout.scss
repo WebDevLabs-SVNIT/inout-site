@@ -34,18 +34,18 @@ body {
 
 		.section_links {
 			width : 75%;
-			line-height : 50px;
+			line-height : 30px;
 			float : left;
 			ul {
 				padding : 10px;
 				list-style-type : none;
 				li {
-					margin-top : -50px;
+					// margin-top : -50px;
 					padding : 10px 15px 10px 15px;
 					display : inline-block;
 					opacity : 0.35;
 					cursor : pointer;
-					// border-radius : 3px;
+					border-radius : 4px;
 					&:hover {
 						opacity : 1;
 						transition : all 0.2s;
@@ -294,7 +294,7 @@ body {
 			position: relative;
 			background: darken($bg_color_main_section, 5%);
 			border : 1px solid darken($bg_color_main_section, 10%);
-			width : 680px;
+			width : 450px;
 			padding : 10px;
 			border-radius: 2px;
 			font-family: Karla;
@@ -308,8 +308,8 @@ body {
 			z-index :10;
 			box-shadow : 0px 1px 2px rgba(0, 0, 0, 0.2);
 			@media screen and (max-width : $first_breakpoint) {
-				font-size : 15px;
-				width : 570px;
+				// font-size : 15px;
+				// width : 570px;
 			}
 
 			@media screen and (max-width : $third_breakpoint) {
