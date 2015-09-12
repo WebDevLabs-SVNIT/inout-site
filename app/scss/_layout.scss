@@ -334,8 +334,8 @@ body {
   		@extend .bg_circle;
   		background-color : #28424F;
 			z-index : -103;
-  		width : 440px;
-  		height : 440px;
+  		width : 410px;
+  		height : 410px;
 			opacity : 1;
 			@media screen and (max-width : $first_breakpoint) {
 				height : 375px;
