@@ -43,18 +43,17 @@
     </div> <!-- End of nav-contents -->
   </nav>
   <div class="mobile-nav">
-    <!-- <a href="#" class="menu_icon"><i class="fa fa-bars fa-2x"></i></a> -->
     <div id="toggle">
       <div class="one"></div>
       <div class="two"></div>
       <div class="three"></div>
     </div>
     <ul id="mobile-menu" class="hide-menu navigation">
-      <li class = " active" data-target = "main">HOME</li>
-          <li data-target = "about">ABOUT</li>
-          <li data-target = "faq">FAQ</li>
-          <li data-target = "schedule">SCHEDULE</li>
-          <li data-target = "sponsors">SPONSORS</li>
+      <li data-target = "main">HOME</li>
+      <li data-target = "about">ABOUT</li>
+      <li data-target = "faq">FAQ</li>
+      <li data-target = "schedule">SCHEDULE</li>
+      <li data-target = "sponsors">SPONSORS</li>
     </ul>
   </div>
 
@@ -346,6 +345,11 @@
     $("#toggle").click(function(){
       $(this).toggleClass("on");
       $("#mobile-menu").toggle();
+      if ($(this).hasClass('on'))
+        $('.section__main').css('transform', 'translateY(270px)');
+      else 
+        $('.section__main').css('transform', 'translateY(0)');
+
       return false;
     });
   });

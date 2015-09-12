@@ -55,7 +55,9 @@
 	    $faqSection = $('.section__faq'),
 	    $scheduleSection = $('.section__schedule'),
 	    $sponsorsSection = $('.section__sponsors'),
-	    $beatingHeart = $('.beating-heart');
+	    $beatingHeart = $('.beating-heart'),
+	    $mobileNavigationToggleButton = $('#toggle'),
+	    $mobileNavigationMenu = $('#mobile-menu');
 
 	var navBarOffset = 66;
 
@@ -70,7 +72,7 @@
 	    aboutSectionColor = '#1A252F',
 	    faqSectionColor = '#40626D',
 	    scheduleSectionColor = '#224252',
-	    sponsorsSectionColor = '#FFFFFF';
+	    sponsorsSectionColor = '#1A252F';
 
 	var sections = {
 		"main": {
@@ -113,17 +115,13 @@
 			$('html, body').animate({
 				scrollTop: scrollTopPos
 			}, 300, 'easeInOutQuint');
+
+			// In case the mobile navigation is open
+			$mobileNavigationToggleButton.toggleClass("on");
+			$mobileNavigationMenu.toggle();
+			$('.section__main').css('transform', 'translateY(0)');
 		});
 	});
-
-	// For the <3
-	// $beatingHeart.on('mouseenter', function() {
-	// 	$beatingHeart.addClass('beat-the-heart');
-	// });
-
-	//  $beatingHeart.on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
-	//         $beatingHeart.removeClass('beat-the-heart');
-	// });
 
 	// Utitlity functions
 	function highlightRelevantLinkBasedOnPosition(pageScrollPosition) {
