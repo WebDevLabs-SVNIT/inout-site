@@ -691,7 +691,36 @@ body {
 
 	.content__footer {
 		@extend .inner_content;
+		&:after {
+			display : table;
+			content : '';
+			clear : both;
+		}
 
+		.contact {
+			padding : 10px;
+			float : left;
+			width : 50%;
+			text-align : left;
+
+			@media screen and (max-width : $fourth_breakpoint) {
+				float : none;
+				width : 100%;
+			}
+		}
+
+		.madeAtCopy {
+			padding : 10px;
+			float : right;
+			width : 50%;
+			text-align : right;
+			@media screen and (max-width : $fourth_breakpoint) {
+				float : none;
+				width : 100%;
+				text-align : left;
+			}
+
+		}
 	}
 
 }
