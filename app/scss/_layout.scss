@@ -149,12 +149,12 @@ body {
 		ul {
 				padding : 10px;
 				list-style-type : none;
-				margin: 45px;
+				margin: 45px 0;
 				li {
 					padding : 10px 15px 10px 15px;
 					cursor : pointer;
 					text-align: center;
-					background-color : darken($bg_color_main_section, 10%);
+					background-color : $bg_color_main_section;
 					&:hover {
 						opacity : 1;
 						transition : all 0.2s;
