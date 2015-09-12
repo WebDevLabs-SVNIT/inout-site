@@ -154,11 +154,12 @@ body {
 					padding : 10px 15px 10px 15px;
 					cursor : pointer;
 					text-align: center;
+					// opacity: 0.35;
 					background-color : $bg_color_main_section;
 					&:hover {
 						opacity : 1;
 						transition : all 0.2s;
-						background-color : darken($bg_color_main_section, 50%);
+						background-color : darken($bg_color_main_section, 10%);
 					}
 				}
 
@@ -400,7 +401,9 @@ body {
 			}
 
 			@media screen and (max-width : $third_breakpoint) {
-				display : none;
+				// display : none;
+				font-size : 15px;
+				width : 80%;
 			}
 		}
 	}
