@@ -245,13 +245,19 @@ body {
 			margin : 0;
 			color : white;
 			position: relative;
-	  	top: 57%;
+	  	top: 59%;
 	  	left : 50%;
 	  	transform : translate(-50%, -50%);
+
 			@media screen and (max-width : $second_breakpoint) {
 				width : 100%;
 				top : 50%;
 			}
+		}
+
+		.share_buttons {
+			width : 230px;
+			margin : 30px auto 0 auto;
 		}
 
   	.bg_circle {
@@ -261,9 +267,9 @@ body {
 	  	top: 24%;
 	  	left : 50%;
 	  	border-radius : 100%;
-	  	transform : translate(-50%, -50%);
+	  	transform : translate(-50%, -56%);
 			@media screen and (max-width : $first_breakpoint) {
-		  	top: 21%;
+		  	top: 20%;
 			}
 
   	}
@@ -657,7 +663,7 @@ body {
 		padding : 20px;
 		background-color: $bg_color_footer;
 		color : white;
-		text-align : right;
+		text-align : center;
 		padding-right : 25px;
 		font-size : 1.1em;
 
