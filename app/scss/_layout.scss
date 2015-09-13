@@ -65,7 +65,12 @@ body {
 						transition : all 0.2s;
 						background-color : darken($bg_color_main_section, 10%);
 					}
+				    a{
+				    	color: #ffffff;
+				    	text-decoration: none;
+				    }
 				}
+
 
 				.active {
 					opacity : 1;
@@ -159,6 +164,10 @@ body {
 						opacity : 1;
 						transition : all 0.2s;
 						background-color : darken($bg_color_main_section, 10%);
+					}
+					a{
+						color: #ffffff;
+						text-decoration: none;
 					}
 				}
 
