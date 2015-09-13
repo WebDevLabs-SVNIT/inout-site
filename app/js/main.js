@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).load(function() {
 
 	var $window = $(window);
 
@@ -33,17 +33,17 @@ $(document).ready(function() {
 			"domEl" : $mainSection,
 			"top" : mainSectionTop,
 			"bg_color" : mainSectionColor
-		}, 
+		},
 		"about" : {
 			"domEl" : $aboutSection,
 			"top" : aboutSectionTop,
 			"bg_color" : aboutSectionColor
-		}, 
+		},
 		"faq" : {
 			"domEl" : $faqSection,
 			"top" : faqSectionTop,
 			"bg_color" : faqSectionColor
-		}, 
+		},
 		"schedule" : {
 			"domEl" : $scheduleSection,
 			"top" : scheduleSectionTop,
@@ -56,7 +56,8 @@ $(document).ready(function() {
 		}
 	};
 
-	// Attaching event listener to the window for listening to scrolling and adjustin the nav bar 
+
+	// Attaching event listener to the window for listening to scrolling and adjustin the nav bar
 	$window.on('scroll', function(event) {
 		highlightRelevantLinkBasedOnPosition($window.scrollTop());
 	});
@@ -64,6 +65,7 @@ $(document).ready(function() {
 	// Attaching event listener to the navigation links
 	$linksContainer.children().each(function() {
 		$(this).on('click', function() {
+			console.log("listened to click");
 			var currentTargetAttr = $(this).attr('data-target');
 
 			var scrollTopPos = sections[currentTargetAttr]["top"];
