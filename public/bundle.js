@@ -73,7 +73,7 @@
 	    aboutSectionTop = $aboutSection.position().top - navBarOffset,
 	    faqSectionTop = $faqSection.position().top - navBarOffset,
 	    scheduleSectionTop = $scheduleSection.position().top - navBarOffset,
-	    sponsorsSectionTop = $sponsorsSection.position().top - navBarOffset;
+	    sponsorsSectionTop = $sponsorsSection.position().top - 200;
 
 	// Colors of different sections of the page
 	var mainSectionColor = '#223241',
