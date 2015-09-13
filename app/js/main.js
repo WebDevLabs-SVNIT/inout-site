@@ -78,19 +78,19 @@ $linksContainer.children().each(function() {
 });
 
 // Utitlity functions
-function highlightRelevantLinkBasedOnPosition(pageScrollPosition) {
-	if( pageScrollPosition >= mainSectionTop && pageScrollPosition < aboutSectionTop ) {
-		selectNavLink("main");
-	} else if ( pageScrollPosition >= aboutSectionTop && pageScrollPosition < faqSectionTop ) {
-		selectNavLink("about");
-	} else if ( pageScrollPosition >= faqSectionTop && pageScrollPosition < scheduleSectionTop ) {
-		selectNavLink("faq");
-	} else if ( pageScrollPosition >= scheduleSectionTop && pageScrollPosition < sponsorsSectionTop ) {
-		selectNavLink("schedule");
-	} else if ( pageScrollPosition >=  sponsorsSectionTop) {
-		selectNavLink("sponsors");
-	}
-}
+// function highlightRelevantLinkBasedOnPosition(pageScrollPosition) {
+// 	if( pageScrollPosition >= mainSectionTop && pageScrollPosition < aboutSectionTop ) {
+// 		selectNavLink("main");
+// 	} else if ( pageScrollPosition >= aboutSectionTop && pageScrollPosition < faqSectionTop ) {
+// 		selectNavLink("about");
+// 	} else if ( pageScrollPosition >= faqSectionTop && pageScrollPosition < scheduleSectionTop ) {
+// 		selectNavLink("faq");
+// 	} else if ( pageScrollPosition >= scheduleSectionTop && pageScrollPosition < sponsorsSectionTop ) {
+// 		selectNavLink("schedule");
+// 	} else if ( pageScrollPosition >=  sponsorsSectionTop) {
+// 		selectNavLink("sponsors");
+// 	}
+// }
 
 function setNavBarColor(color) {
 	if ( $navBar.css('background-color') !== color ) {
@@ -98,13 +98,20 @@ function setNavBarColor(color) {
 	}
 }
 
-function selectNavLink(linkDataAttr) {
-	$linksContainer.children().each(function() {
-		var currentTargetAttr = $(this).attr('data-target');
-		if( currentTargetAttr === linkDataAttr ) {
-			$(this).addClass('active');
-		} else {
-			$(this).removeClass('active');
-		}
-	});
-}
+// function selectNavLink(linkDataAttr) {
+// 	$linksContainer.children().each(function() {
+// 		var currentTargetAttr = $(this).attr('data-target');
+// 		if( currentTargetAttr === linkDataAttr ) {
+// 			$(this).addClass('active');
+// 		} else {
+// 			$(this).removeClass('active');
+// 		}
+// 	});
+// }
+
+// hack to highlight active navlink
+ $('li').click(function(e) {
+        e.preventDefault();
+        $('li').removeClass('active');
+        $(this).addClass('active');
+    });
