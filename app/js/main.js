@@ -65,7 +65,6 @@ $(window).load(function() {
 	// Attaching event listener to the navigation links
 	$linksContainer.children().each(function() {
 		$(this).on('click', function() {
-			console.log("listened to click");
 			var currentTargetAttr = $(this).attr('data-target');
 
 			var scrollTopPos = sections[currentTargetAttr]["top"];
